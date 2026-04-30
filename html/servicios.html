@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilario Development Studio - Servicios</title>
+    <link rel="icon" type="image/png" href="../imagenes/LOGOSKILARIO .png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/servicios.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="../imagenes/LOGOSKILARIO .png" alt="Skilario Logo" class="logo-img">
+                <div class="logo-text-wrap">
+                    <span class="logo-skilario">SKILARIO</span>
+                    <span class="logo-dev">DEVELOPMENT STUDIO</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#inicio">Inicio</a></li>
+                <li><a href="../html/servicios.html">Servicios</a></li>
+                <li><a href="../html/invitaciones.html">Invitaciones</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" aria-label="Alternar modo oscuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                    <span id="darkLabel">Modo noche</span>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- ░░░ SERVICIOS WEB VIEW ░░░ -->
+    <div class="view" id="view-servicios">
+
+        <!-- Botón Volver -->
+        <a href="../index.html" class="back-btn-minimal-link">
+          <button class="back-btn-minimal" aria-label="Volver al inicio">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Volver al inicio
+          </button>
+        </a>
+
+        <h1 class="section-title animate-on-scroll delay-1">Planes pensados <span class="text-blue">para crecer</span></h1>
+        <p class="section-subtitle animate-on-scroll delay-2" style="margin:0 auto 0 auto;">Elegí el plan que se adapta a tu negocio. Todos incluyen diseño responsive, código limpio y soporte post-entrega.</p>
+
+        <!-- Pricing Grid -->
+        <div class="pricing-grid">
+
+            <!-- Tier 1 -->
+            <div class="pricing-card animate-on-scroll delay-1">
+                <div class="pricing-card__tier">Tier 01</div>
+                <div class="pricing-card__name">Essential Landing</div>
+                <div class="pricing-card__tagline">Para emprendedores que quieren aparecer online</div>
+                <div class="pricing-card__price">
+                    <div class="pricing-card__amount"><sup>USD</sup>200</div>
+                    <div class="pricing-card__currency">Pago único · Entrega en 5 días</div>
+                </div>
+                <ul class="pricing-card__features">
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Diseño One-page profesional
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        SEO básico (meta tags, sitemap)
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Botones de contacto (WhatsApp, email)
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Optimización móvil completa
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Formulario de contacto
+                    </li>
+                </ul>
+                <a href="https://www.mercadopago.com.ar/checkout/skilario-essential" target="_blank" rel="noopener" class="btn-primary btn-contratar">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+                    Contratar ahora
+                </a>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="pricing-card animate-on-scroll delay-2">
+                <div class="pricing-card__tier">Tier 02</div>
+                <div class="pricing-card__name">Business Core</div>
+                <div class="pricing-card__tagline">Para negocios que necesitan más presencia digital</div>
+                <div class="pricing-card__price">
+                    <div class="pricing-card__amount"><sup>USD</sup>400</div>
+                    <div class="pricing-card__currency">Pago único · Entrega en 10 días</div>
+                </div>
+                <ul class="pricing-card__features">
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Multi-página (hasta 4 secciones)
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        SEO Local optimizado
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Panel autogestionable básico (CMS)
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Integración de redes sociales
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Certificado SSL incluido
+                    </li>
+                </ul>
+                <a href="https://www.mercadopago.com.ar/checkout/skilario-business" target="_blank" rel="noopener" class="btn-primary btn-contratar">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+                    Contratar ahora
+                </a>
+            </div>
+
+            <!-- Tier 3 - FEATURED -->
+            <div class="pricing-card featured animate-on-scroll delay-3">
+                <div class="pricing-card__badge">⭐ Más elegidos</div>
+                <div class="pricing-card__tier">Tier 03</div>
+                <div class="pricing-card__name">Professional Suite</div>
+                <div class="pricing-card__tagline">Para negocios que necesitan automatización y métricas</div>
+                <div class="pricing-card__price">
+                    <div class="pricing-card__amount"><sup>USD</sup>650</div>
+                    <div class="pricing-card__currency">Pago único · Entrega en 15 días</div>
+                </div>
+                <ul class="pricing-card__features">
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Sistema de reservas y turnos online
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Animaciones y micro-interacciones avanzadas
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Google Analytics + Meta Pixel
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Dashboard de métricas personalizado
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Notificaciones automáticas por email
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Soporte 30 días post-entrega
+                    </li>
+                </ul>
+                <a href="https://www.mercadopago.com.ar/checkout/skilario-professional" target="_blank" rel="noopener" class="btn-primary btn-contratar pulse-cta">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+                    Contratar ahora
+                </a>
+            </div>
+
+            <!-- Tier 4 -->
+            <div class="pricing-card animate-on-scroll delay-4">
+                <div class="pricing-card__tier">Tier 04</div>
+                <div class="pricing-card__name">Enterprise</div>
+                <div class="pricing-card__tagline">Para tiendas y empresas que venden online</div>
+                <div class="pricing-card__price">
+                    <div class="pricing-card__amount"><sup>USD</sup>850<span style="font-size:1.2rem;color:var(--color-text-muted);">+</span></div>
+                    <div class="pricing-card__currency">Precio a medida · Consultar</div>
+                </div>
+                <ul class="pricing-card__features">
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Tienda online completa (E-commerce)
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Gestión de stock e inventario
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Cuentas de usuario y panel admin
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Mercado Pago Checkout Pro
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Integración con Mercado Libre / Tienda Nube
+                    </li>
+                    <li class="pricing-card__feature">
+                        <span class="pricing-card__feature-check"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></span>
+                        Soporte 60 días · SLA garantizado
+                    </li>
+                </ul>
+                <a href="https://wa.me/542374031298?text=Hola!%20quiero%20consultar%20por%20el%20plan%20Enterprise" target="_blank" rel="noopener" class="btn-primary btn-contratar">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+                    Consultar precio
+                </a>
+            </div>
+
+        </div><!-- /pricing-grid -->
+
+        <!-- Note -->
+        <p style="text-align:center;color:var(--color-text-muted);font-size:0.82rem;margin-top:32px;padding-bottom:48px;" class="animate-on-scroll delay-5">
+            💳 Pagos procesados a través de <strong>Mercado Pago</strong> · Tarjetas, transferencia y cuotas disponibles.
+            ¿Tenés dudas? <a href="https://wa.me/542374031298" target="_blank" style="color:var(--color-primary);font-weight:600;text-decoration:none;">Escribinos por WhatsApp</a>
+        </p>
+
+    </div><!-- /view-servicios -->
+
+    <!-- WhatsApp flotante -->
+    <a class="whatsapp" href="https://wa.me/542374031298" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+/* ══════════════════════════════════════════════════════════════
+   INVITACIONES.CSS — Skilario Dev Studio
+   Versión definitiva - Estilo prolijo como la página de Servicios
+   ══════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────
+   1. HERO PRINCIPAL
+   ───────────────────────────────────────────────────────────── */
+/* Contenedor de Badges superior */
+.hero-header-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.promo-pill, .section-label {
+  margin-bottom: 0 !important; /* Reseteamos márgenes viejos */
+}
+
+/* La Card Blanca */
+.pricing-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-info {
+  margin-bottom: 25px;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #a0aec0;
+  font-size: 1.1rem;
+}
+
+.price-current {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.price-current {
+  display: flex;
+  align-items: baseline; /* Alinea los textos a su base natural */
+  justify-content: center; /* Centra todo el bloque */
+  gap: 4px; /* Espacio mínimo entre el símbolo, el número y ARS */
+  font-size: 2.5rem; /* Ajustá este valor para el tamaño general del "70.000" */
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin: 5px 0;
+}
+
+.price-current .currency { 
+  font-size: 1.2rem; /* Más chico que antes */
+  font-weight: 600;
+  vertical-align: baseline; /* Cambiado de super a baseline para evitar saltos raros */
+}
+
+.price-current .period { 
+  font-size: 0.9rem; /* Más sutil */
+  color: #718096;
+  font-weight: 600;
+  margin-left: 2px;
+}
+.price-savings {
+  display: block;
+  background: #fff5f5;
+  color: #007bff;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* El Botón de Mercado Pago */
+.cta-button-mp {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+.cta-button-mp:hover {
+  background: #0056b3;
+  box-shadow: 0 15px 25px rgba(0, 123, 255, 0.3);
+}
+
+.price-note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   2. PRECIO
+   ───────────────────────────────────────────────────────────── */
+.price-tag-large {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 30px auto 40px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 28px 56px;
+  box-shadow: var(--shadow-sm);
+}
+
+.price-old {
+  font-size: 1rem;
+  color: #8e8e93;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.price-current {
+  align-items: center;
+  font-family: var(--heading-font);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  line-height: 1;
+  display: flex;
+  gap: 5px;
+}
+
+.price-current .currency {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-current .period {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-left: 4px;
+}
+
+.price-savings {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ff4d4d;
+  background: rgba(255, 77, 77, 0.1);
+  border-radius: 50px;
+  padding: 4px 16px;
+}
+
+.price-note {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   3. BOTONES
+   ───────────────────────────────────────────────────────────── */
+.btn-primary-glow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--primary-blue);
+  color: white;
+  padding: 16px 42px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 102, 255, 0.2);
+}
+
+.btn-primary-glow:hover {
+  background: var(--light-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 102, 255, 0.3);
+}
+
+.btn-outline-lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--primary-blue);
+  padding: 14px 38px;
+  border-radius: 50px;
+  border: 2px solid var(--primary-blue);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-lg:hover {
+  background: var(--primary-blue);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.back-btn-minimal-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.back-btn-minimal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-light);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-btn-minimal:hover {
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  transform: translateX(-4px);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   4. GALERÍA DE IPHONES - ¡CORREGIDA!
+   ───────────────────────────────────────────────────────────── */
+.inv-gallery-section {
+  padding: 60px 0 40px;
+}
+
+.inv-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.inv-mockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+/* Contenedor del iPhone */
+.iphone-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.iphone-wrapper:hover {
+  transform: translateY(-10px);
+}
+
+/* Marco del iPhone */
+.iphone-frame-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Pantalla del iPhone - ajustada para que calce perfecto */
+.iphone-screen {
+  position: absolute;
+  top: 1.5%;
+  left: 6.8%;
+  right: 6.8%;
+  bottom: 1.5%;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10%;
+  background: #000;
+  transform: scale(1.1); /* Aumenta un 10% el tamaño */
+  transform-origin: center; /* Se agranda desde el centro */
+}
+
+
+/* Texto debajo del mockup */
+.inv-card-info {
+  text-align: center;
+}
+
+.inv-card-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.inv-card-info p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   5. BANNER DE DESCUENTO
+   ───────────────────────────────────────────────────────────── */
+.discount-alert-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: linear-gradient(#007bff);
+  padding: 28px 40px;
+  border-radius: 24px;
+  margin: 30px 0 70px;
+  box-shadow: 0 10px 25px rgba(252, 251, 251, 0.2);
+}
+
+.alert-content h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.alert-content p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-white {
+  flex-shrink: 0;
+  background: white;
+  color: #ff4757;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   6. CARACTERÍSTICAS (estilo prolijo)
+   ───────────────────────────────────────────────────────────── */
+.features-section {
+  padding: 40px 0 70px;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.inv-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.inv-feature-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.inv-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+.inv-feature-icon {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.inv-feature-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.inv-feature-card p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   7. CTA FINAL
+   ───────────────────────────────────────────────────────────── */
+.final-cta-card {
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  padding: 60px 50px;
+  margin: 30px 0 90px;
+  box-shadow: var(--shadow-sm);
+}
+
+.final-cta-card .section-title {
+  margin-bottom: 20px;
+}
+
+.final-cta-card > p {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 35px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   8. RESPONSIVE
+   ───────────────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .inv-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .inv-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .price-current {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .invitations-hero {
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+  
+  .inv-gallery-grid {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .inv-features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .price-tag-large {
+    padding: 20px 30px;
+  }
+  
+  .price-current {
+    font-size: 2.2rem;
+  }
+  
+  .discount-alert-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  .final-cta-card {
+    padding: 40px 25px;
+    margin-bottom: 60px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .cta-buttons a {
+    justify-content: center;
+  }
+}
+
+/* Modo oscuro para cards */
+body.dark-mode .price-tag-large,
+body.dark-mode .inv-feature-card,
+body.dark-mode .final-cta-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .inv-feature-card:hover {
+  border-color: var(--light-blue);
+}

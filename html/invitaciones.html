@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitaciones Digitales — Skilario Dev Studio</title>
+  <link rel="icon" type="image/png" href="../imagenes/FaviconSkilario.png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/invitaciones.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="../imagenes/LOGOSKILARIO .png" alt="Skilario Dev Studio" class="logo-img" width="32" height="32">
+        <div class="logo-text-wrap">
+          <span class="logo-skilario">SKILARIO</span>
+          <span class="logo-dev">DEVELOPMENT STUDIO</span>
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html#inicio">Inicio</a></li>
+        <li><a href="../html/servicios.html">Servicios</a></li>
+        <li><a href="../html/invitaciones.html" class="active">Invitaciones</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="dark-toggle" id="darkToggle" aria-label="Alternar modo oscuro">
+          <i class="fas fa-moon" id="darkIcon"></i>
+          <span id="darkLabel">Modo noche</span>
+        </button>
+        <div class="hamburger" aria-label="Menú">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="view-invitaciones">
+
+    <!-- ── HERO ──────────────────────────────────── -->
+    <section class="invitations-hero">
+      <div class="container">
+
+        <a href="../index.html" class="back-btn-minimal-link">
+          <button class="back-btn-minimal" aria-label="Volver al inicio">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Volver al inicio
+          </button>
+        </a>
+
+
+        <h1 class="section-title animate-on-scroll delay-1">
+          Así lucen nuestras <span class="text-blue"> Invitaciones Digitales</span>
+        </h1>
+
+        <p class="section-subtitle animate-on-scroll delay-2">
+          Bodas, cumpleaños, eventos corporativos.<br>
+          Tu invitación, personalizada al detalle, directo al celular de tus invitados.
+        </p>
+
+        <!-- ── GALERÍA DE IPHONES ─────────────────────── -->
+
+
+        <div class="inv-gallery-grid">
+
+          <!-- Mockup 1: Boda -->
+          <article class="inv-mockup animate-on-scroll delay-1">
+            <div class="iphone-wrapper">
+              <img src="../imagenes/iphonecasamiento.png" class="iphone-frame-img" alt="" aria-hidden="true" draggable="false">
+            </div>
+            <div class="inv-card-info">
+              <h3>Boda Elegante</h3>
+              <p>RSVP + Maps + Cuenta Regresiva</p>
+            </div>
+          </article>
+
+          <!-- Mockup 2: XV Años / Cumpleaños -->
+          <article class="inv-mockup animate-on-scroll delay-2">
+            <div class="iphone-wrapper">
+              <img src="../imagenes/xviphone.png" class="iphone-frame-img" alt="" aria-hidden="true" draggable="false">
+         
+            </div>
+            <div class="inv-card-info">
+              <h3>XV Años / Cumpleaños</h3>
+              <p>Menú interactivo + Música de fondo</p>
+            </div>
+          </article>
+
+          <!-- Mockup 3: Corporativo (placeholder visual hasta tener captura real) -->
+          <article class="inv-mockup animate-on-scroll delay-3">
+            <div class="iphone-wrapper">
+              <img src="../imagenes/Eventoiphone.png" class="iphone-frame-img" alt="" aria-hidden="true" draggable="false">
+            <div class="inv-card-info">
+              <h3>Evento Corporativo</h3>
+              <p>Agenda + Registro + Branding</p>
+            </div>
+          </article>
+
+        </div><!-- /inv-gallery-grid -->
+      </div>
+    </section>
+
+    <!-- ── BANNER DESCUENTO ────────────────────────── -->
+    <section>
+      <div class="container">
+        <div class="discount-alert-banner animate-on-scroll">
+          <div class="alert-content">
+            <h3>⏰ Oferta por tiempo limitado</h3>
+            <p>Reservá tu invitación hoy y ahorrá $30.000 ARS. Solo para los primeros 10 clientes.</p>
+          </div>
+          <a href="https://www.mercadopago.com.ar/checkout/skilario-invitacion"
+             target="_blank" rel="noopener noreferrer" class="btn-white">
+            Aprovechar oferta
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+        <!-- Card de Compra Unificada -->
+        <div class="pricing-card animate-on-scroll delay-3" role="region" aria-label="Precio y Contratación">
+          <div class="price-info">
+            <span class="price-old">$100.000</span>
+            <div class="price-current">
+              <span class="currency">$</span>70.000 <span class="period">ARS</span>
+            </div>
+          </div>
+
+          <a href="https://www.mercadopago.com.ar/checkout/skilario-invitacion"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="cta-button-mp">
+            Contratar con Mercado Pago 💳  $70.000 ARS
+          </a>
+
+          <span class="price-note">Precio único · Sin costos ocultos</span>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- ── FEATURES ───────────────────────────────── -->
+    <section class="features-section">
+      <div class="container">
+
+        <div class="features-header animate-on-scroll">
+          <span class="section-label">¿Qué incluye?</span>
+          <h2 class="section-title">Todo lo que tu invitación <span class="text-blue">necesita</span></h2>
+        </div>
+
+        <div class="inv-features-grid">
+          <div class="inv-feature-card animate-on-scroll delay-1">
+            <span class="inv-feature-icon" aria-hidden="true">⏳</span>
+            <h4>Cuenta Regresiva en vivo</h4>
+            <p>Contador animado en tiempo real hasta el día del evento.</p>
+          </div>
+          <div class="inv-feature-card animate-on-scroll delay-2">
+            <span class="inv-feature-icon" aria-hidden="true">📝</span>
+            <h4>RSVP Interactivo</h4>
+            <p>Confirman asistencia desde el celular y recibís todo organizado.</p>
+          </div>
+          <div class="inv-feature-card animate-on-scroll delay-3">
+            <span class="inv-feature-icon" aria-hidden="true">📍</span>
+            <h4>Google Maps Integrado</h4>
+            <p>Botón directo a la navegación del lugar del evento.</p>
+          </div>
+          <div class="inv-feature-card animate-on-scroll delay-4">
+            <span class="inv-feature-icon" aria-hidden="true">💬</span>
+            <h4>Recordatorios WhatsApp</h4>
+            <p>Mensajes automáticos para que nadie se olvide del evento.</p>
+          </div>
+          <div class="inv-feature-card animate-on-scroll delay-5">
+            <span class="inv-feature-icon" aria-hidden="true">🎵</span>
+            <h4>Música Personalizada</h4>
+            <p>Canción de fondo que se reproduce al abrir la invitación.</p>
+          </div>
+          <div class="inv-feature-card animate-on-scroll delay-6">
+            <span class="inv-feature-icon" aria-hidden="true">📱</span>
+            <h4>100% Responsive</h4>
+            <p>Diseño adaptado a iPhone 15/16 Pro y cualquier Android.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── FINAL CTA ───────────────────────────────── -->
+    <div class="container">
+      <div class="final-cta-card animate-on-scroll">
+        <h2 class="section-title">¿Listo para sorprender a tus <span class="text-blue">invitados</span>?</h2>
+        <p>Contanos el evento y te enviamos un mockup personalizado en menos de 24&nbsp;hs.</p>
+        <div class="cta-buttons">
+          <a href="https://www.mercadopago.com.ar/checkout/skilario-invitacion"
+             target="_blank" rel="noopener noreferrer"
+             class="btn-primary-glow btn-lg pulse-cta">
+            💳 Contratar — $70.000 ARS
+          </a>
+          <a href="https://wa.me/542374031298?text=Hola!%20me%20interesa%20una%20invitaci%C3%B3n%20digital"
+             target="_blank" rel="noopener noreferrer"
+             class="btn-outline-lg">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- WhatsApp flotante -->
+  <a class="whatsapp" href="https://wa.me/542374031298" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon" aria-hidden="true"></i>
+  </a>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/script.js"></script>
+
+</body>
+</html>
