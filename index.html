@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilario Development Studio</title>
+    <link rel="icon" type="image/png" href="imagenes/LOGOSKILARIO .png" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Inter:opsz,wght@14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="imagenes/LOGOSKILARIO .png" alt="Skilario Logo" class="logo-img">
+                <div class="logo-text-wrap">
+                    <span class="logo-skilario">SKILARIO</span>
+                    <span class="logo-dev">DEVELOPMENT STUDIO</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#promo" class="nav-promo">Promo $50k</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="html/servicios.html">Servicios</a></li>
+                <li><a href="html/invitaciones.html">Invitaciones Digitales</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" aria-label="Alternar modo oscuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                    <span id="darkLabel">Modo noche</span>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <span class="hero-blob hero-blob--violet"></span>
+            <span class="hero-blob hero-blob--cyan"></span>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text animate-fade-in">
+                <span class="eyebrow">Estudio de desarrollo · Argentina</span>
+                <h1>Construimos el <span class="text-blue">futuro digital</span> de tu negocio</h1>
+                <p class="hero-sub">Hacemos páginas web y sistemas a medida para negocios que quieren vender más y trabajar más ordenados. Del primer mensaje al lanzamiento, hablás siempre con nosotros.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/542374031298?text=Hola%20Skilario!%20Quiero%20hablar%20de%20un%20proyecto" target="_blank" rel="noopener" class="btn-grad">Hablemos de tu proyecto <i class="fas fa-arrow-right"></i></a>
+                    <a href="#proyectos" class="btn-ghost">Ver proyectos</a>
+                </div>
+                <ul class="hero-trust">
+                    <li><i class="fas fa-check"></i> Webs listas en 24 hs</li>
+                    <li><i class="fas fa-check"></i> Pagás con Mercado Pago</li>
+                </ul>
+            </div>
+            <div class="hero__visual reveal">
+                <div class="hero-chip hero-chip--b">
+                    <span class="chip-ico"><i class="fas fa-store"></i></span>
+                    <div><strong>+4 negocios</strong><span>ya están online</span></div>
+                </div>
+                <div class="hero__card">
+                    <div class="hero__card-header">
+                        <span class="dot dot--red"></span>
+                        <span class="dot dot--yellow"></span>
+                        <span class="dot dot--green"></span>
+                        <span class="hero__card-title">skilario.dev</span>
+                    </div>
+                    <div class="hero__card-body">
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">studio</span> = {</div>
+                        <div class="code-line code-indent"><span class="code-key">name</span>: <span class="code-string">'Skilario'</span>,</div>
+                        <div class="code-line code-indent"><span class="code-key">focus</span>: <span class="code-string">'Digital Products'</span>,</div>
+                        <div class="code-line code-indent"><span class="code-key">stack</span>: [<span class="code-string">'Web'</span>, <span class="code-string">'Software'</span>],</div>
+                        <div class="code-line code-indent"><span class="code-key">deliver</span>: <span class="code-fn">() =&gt;</span> <span class="code-string">'excellence'</span></div>
+                        <div class="code-line">};</div>
+                        <div class="code-line code-cursor">▌</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMO (resumen: el detalle completo está en Servicios) -->
+    <section id="promo" class="promo promo--home">
+        <div class="container promo-grid">
+            <div class="promo-text animate-on-scroll">
+                <span class="eyebrow">Promo especial</span>
+                <h2 class="promo-title">Tu página web <span class="text-blue">profesional</span> por</h2>
+                <div class="promo-price" aria-label="50.000 pesos por mes">
+                    <span class="cur">$</span><span class="amount">50.000</span><span class="per">/mes</span>
+                </div>
+                <p class="promo-includes">Incluye <strong>hosting</strong>, <strong>dominio</strong> y <strong>hasta 5 secciones</strong>.</p>
+                <div class="promo-actions">
+                    <a href="html/servicios.html#promo" class="btn-grad">Saber más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="promo-card-wrap animate-on-scroll delay-2">
+                <div class="promo-card promo-card--mini">
+                    <ul class="promo-mini">
+                        <li><span class="ico"><i class="fas fa-desktop"></i></span> Diseño responsive</li>
+                        <li><span class="ico"><i class="fab fa-whatsapp"></i></span> Botón a WhatsApp</li>
+                        <li><span class="ico"><i class="fab fa-instagram"></i></span> Conectada a redes</li>
+                        <li><span class="ico"><i class="fas fa-search"></i></span> Lista para Google</li>
+                    </ul>
+                    <div class="promo-mini__fast"><i class="far fa-clock"></i> Lista en 24 hs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="svc">
+        <div class="container">
+            <div class="sec-head animate-on-scroll">
+                <h2>Qué hacemos</h2>
+                <p>Para negocios, emprendedores y empresas.</p>
+            </div>
+            <div class="svc-grid">
+                <div class="svc-item animate-on-scroll delay-1">
+                    <span class="svc-ico"><i class="fas fa-code"></i></span>
+                    <h3>Páginas web</h3>
+                    <p>Sitios rápidos, que se ven bien en el celu y te traen consultas.</p>
+                </div>
+                <div class="svc-item animate-on-scroll delay-2">
+                    <span class="svc-ico"><i class="fas fa-laptop-code"></i></span>
+                    <h3>Sistemas a medida</h3>
+                    <p>Turnos, stock, empleados: software armado según cómo trabaja tu negocio.</p>
+                </div>
+                <div class="svc-item animate-on-scroll delay-3">
+                    <span class="svc-ico"><i class="fas fa-mobile-alt"></i></span>
+                    <h3>Apps móviles</h3>
+                    <p>Apps para Android e iOS cuando tu negocio lo necesita.</p>
+                </div>
+                <div class="svc-item animate-on-scroll delay-4">
+                    <span class="svc-ico"><i class="far fa-lightbulb"></i></span>
+                    <h3>Asesoramiento</h3>
+                    <p>Te ayudamos a elegir qué conviene hacer antes de invertir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPCIÓN -->
+    <section class="about">
+        <div class="container about-grid">
+            <div class="about-media animate-on-scroll">
+                <img src="imagenes/programando.jpg" alt="Desarrollador programando en su escritorio">
+            </div>
+            <div class="about-text animate-on-scroll delay-2">
+                <h2>Más que código, creamos soluciones</h2>
+                <p class="about-lead">No solo escribimos líneas de código: diseñamos experiencias digitales que resuelven problemas reales, desde la idea inicial hasta el lanzamiento y el mantenimiento.</p>
+                <ul class="about-points">
+                    <li>
+                        <span class="ico"><i class="fas fa-route"></i></span>
+                        <div><strong>De punta a punta</strong><span>Diseño, desarrollo y puesta online.</span></div>
+                    </li>
+                    <li>
+                        <span class="ico"><i class="fas fa-comments"></i></span>
+                        <div><strong>Trato directo</strong><span>Hablás con quien arma tu proyecto.</span></div>
+                    </li>
+                    <li>
+                        <span class="ico"><i class="fas fa-life-ring"></i></span>
+                        <div><strong>Soporte continuo</strong><span>Seguimos cerca después de entregar.</span></div>
+                    </li>
+                    <li>
+                        <span class="ico"><i class="fas fa-chart-line"></i></span>
+                        <div><strong>Pensado para crecer</strong><span>Escala junto con tu negocio.</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="works">
+        <div class="container">
+            <div class="sec-head animate-on-scroll">
+                <h2>Algunos trabajos</h2>
+                <p>Webs que ya están funcionando.</p>
+            </div>
+            <div class="works-grid">
+                <a href="https://graficaroca.com.ar" target="_blank" rel="noopener" class="work animate-on-scroll">
+                    <div class="work-img"><img src="imagenes/hilux.png" alt="Camioneta ploteada por Gráfica Roca"></div>
+                    <div class="work-info">
+                        <div><h3>Gráfica Roca</h3><span>Imprenta · Moreno</span></div>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a href="https://Newgymcenterr.netlify.app" target="_blank" rel="noopener" class="work animate-on-scroll">
+                    <div class="work-img"><img src="imagenes/Gymcenterdentro.png" alt="Interior de New Gym Center"></div>
+                    <div class="work-info">
+                        <div><h3>New Gym Center</h3><span>Gimnasio · Pablo Nogués</span></div>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a href="https://jjuan2105.wixsite.com/sigmapets" target="_blank" rel="noopener" class="work animate-on-scroll">
+                    <div class="work-img"><img src="imagenes/veterinaria.png" alt="Local de Sigma Pets"></div>
+                    <div class="work-info">
+                        <div><h3>Sigma Pets</h3><span>Pet shop</span></div>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact2">
+        <div class="container">
+            <div class="contact2-box animate-on-scroll">
+                <div class="contact2-text">
+                    <h2>Hablemos de tu proyecto</h2>
+                    <p>Contanos qué necesitás y lo vemos juntos, sin compromiso.</p>
+                    <a href="https://wa.me/542374031298?text=Hola%20Skilario!%20Quiero%20hablar%20de%20un%20proyecto" target="_blank" rel="noopener" class="btn-wsp"><i class="fab fa-whatsapp"></i> Escribinos por WhatsApp</a>
+                </div>
+                <ul class="contact2-list">
+                    <li><i class="fas fa-envelope"></i><a href="mailto:skilariodevstudio@gmail.com">skilariodevstudio@gmail.com</a></li>
+                    <li><i class="fas fa-phone-alt"></i><a href="tel:+542374031298">+54 237 403 1298</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/skilariodevs/" target="_blank" rel="noopener">@skilariodevs</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 SKILARIO DEVELOPMENT STUDIO</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skilariodevs/" target="_blank" rel="noopener" aria-label="Instagram de Skilario"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Skilario/SkilarioDevStudio" target="_blank" rel="noopener" aria-label="GitHub de Skilario"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP BTN FLOTANTE -->
+    <a class="whatsapp" href="https://wa.me/542374031298" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

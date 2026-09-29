@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitaciones Digitales — Skilario Dev Studio</title>
+  <link rel="icon" type="image/png" href="../imagenes/FaviconSkilario.png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/invitaciones.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="../imagenes/LOGOSKILARIO .png" alt="Skilario Dev Studio" class="logo-img" width="32" height="32">
+        <div class="logo-text-wrap">
+          <span class="logo-skilario">SKILARIO</span>
+          <span class="logo-dev">DEVELOPMENT STUDIO</span>
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html#inicio">Inicio</a></li>
+        <li><a href="../html/servicios.html#promo" class="nav-promo">Promo $50k</a></li>
+        <li><a href="../index.html#proyectos">Proyectos</a></li>
+        <li><a href="../html/servicios.html">Servicios</a></li>
+        <li><a href="../html/invitaciones.html" class="active">Invitaciones Digitales</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="dark-toggle" id="darkToggle" aria-label="Alternar modo oscuro">
+          <i class="fas fa-moon" id="darkIcon"></i>
+          <span id="darkLabel">Modo noche</span>
+        </button>
+        <div class="hamburger" aria-label="Menú">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="view-invitaciones">
+
+    <!-- ── HERO ─────────────────────────────────────── -->
+    <section class="inv-hero">
+      <div class="inv-hero__glow" aria-hidden="true"></div>
+      <div class="container">
+
+        <a href="../index.html" class="back-btn-minimal-link">
+          <button class="back-btn-minimal" aria-label="Volver al inicio">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Volver al inicio
+          </button>
+        </a>
+
+        <div class="inv-hero__head">
+          <span class="eyebrow animate-on-scroll">Invitaciones digitales</span>
+          <h1 class="animate-on-scroll delay-1">Tu evento, directo al <span class="text-blue">celular</span> de tus invitados</h1>
+          <p class="animate-on-scroll delay-2">Bodas, XV, cumpleaños y eventos de empresa. La diseñamos a tu gusto, con confirmación de asistencia, ubicación y cuenta regresiva. Se comparte con un link por WhatsApp.</p>
+        </div>
+
+        <div class="inv-gallery">
+          <article class="inv-item inv-item--violet animate-on-scroll delay-1">
+            <div class="inv-item__stage">
+              <img src="../imagenes/inv-boda.png" alt="Invitación digital de boda en un celular" draggable="false">
+            </div>
+            <div class="inv-item__info">
+              <span class="inv-tag">Boda</span>
+              <h3>Boda Elegante</h3>
+              <p>Confirmación, mapa y cuenta regresiva</p>
+            </div>
+          </article>
+
+          <article class="inv-item inv-item--blue animate-on-scroll delay-2">
+            <div class="inv-item__stage">
+              <img src="../imagenes/inv-xv.png" alt="Invitación digital de XV años en un celular" draggable="false">
+            </div>
+            <div class="inv-item__info">
+              <span class="inv-tag">XV · Cumpleaños</span>
+              <h3>Valentina XV</h3>
+              <p>Música de fondo y menú interactivo</p>
+            </div>
+          </article>
+
+          <article class="inv-item inv-item--cyan animate-on-scroll delay-3">
+            <div class="inv-item__stage">
+              <img src="../imagenes/inv-evento.png" alt="Invitación digital de evento corporativo en un celular" draggable="false">
+            </div>
+            <div class="inv-item__info">
+              <span class="inv-tag">Empresa</span>
+              <h3>Evento Corporativo</h3>
+              <p>Agenda, registro y tu marca</p>
+            </div>
+          </article>
+        </div>
+        <p class="inv-swipe-hint"><i class="fas fa-hand-point-up"></i> Deslizá para ver más</p>
+      </div>
+    </section>
+
+    <!-- ── PRECIO ───────────────────────────────────── -->
+    <section class="inv-pricing" id="precio">
+      <div class="container">
+        <div class="inv-price-card animate-on-scroll">
+
+          <div class="inv-price-card__main">
+            <span class="inv-off">30% OFF · primeros 10 clientes</span>
+            <h2>Tu invitación lista por</h2>
+            <div class="inv-price">
+              <span class="inv-price__old">$100.000</span>
+              <div class="inv-price__now"><span class="cur">$</span>70.000 <small>ARS</small></div>
+              <span class="inv-price__note">Pago único · sin costos ocultos</span>
+            </div>
+
+            <div class="inv-price-card__actions">
+              <a href="https://wa.me/542374031298?text=Hola!%20Me%20interesa%20una%20invitaci%C3%B3n%20digital" target="_blank" rel="noopener" class="btn-grad">
+                <i class="fab fa-whatsapp"></i> Quiero mi invitación
+              </a>
+            </div>
+            <p class="promo-paylink">
+              <i class="fas fa-credit-card"></i>
+              ¿Ya lo charlaste con nosotros? Transferí <strong>$70.000</strong> al alias <button type="button" class="alias-copy" data-copy="skidevs" aria-label="Copiar alias skidevs"><span>skidevs</span><i class="far fa-copy"></i></button>
+            </p>
+          </div>
+
+          <div class="inv-price-card__steps">
+            <h3>Cómo funciona</h3>
+            <ol class="inv-steps">
+              <li>
+                <span class="inv-steps__n">1</span>
+                <div><strong>Nos contás tu evento</strong><span>Fecha, lugar, estilo y lo que quieras mostrar.</span></div>
+              </li>
+              <li>
+                <span class="inv-steps__n">2</span>
+                <div><strong>Te mandamos un boceto</strong><span>En menos de 24 hs lo ves en tu celu y pedís cambios.</span></div>
+              </li>
+              <li>
+                <span class="inv-steps__n">3</span>
+                <div><strong>La compartís con un link</strong><span>Por WhatsApp o redes, y seguís las confirmaciones.</span></div>
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── QUÉ INCLUYE ──────────────────────────────── -->
+    <section class="inv-features">
+      <div class="container">
+        <div class="inv-features__head animate-on-scroll">
+          <h2>Qué incluye</h2>
+        </div>
+
+        <div class="inv-features__grid">
+          <div class="inv-feat animate-on-scroll delay-1">
+            <span class="inv-feat__ico"><i class="far fa-clock"></i></span>
+            <div><h4>Cuenta regresiva</h4><p>Contador en vivo hasta el día del evento.</p></div>
+          </div>
+          <div class="inv-feat animate-on-scroll delay-2">
+            <span class="inv-feat__ico"><i class="fas fa-user-check"></i></span>
+            <div><h4>Confirmación de asistencia</h4><p>Confirman desde el celu y vos recibís la lista ordenada.</p></div>
+          </div>
+          <div class="inv-feat animate-on-scroll delay-3">
+            <span class="inv-feat__ico"><i class="fas fa-map-marker-alt"></i></span>
+            <div><h4>Ubicación con Google Maps</h4><p>Un toque y les abre el camino al salón.</p></div>
+          </div>
+          <div class="inv-feat animate-on-scroll delay-1">
+            <span class="inv-feat__ico"><i class="fab fa-whatsapp"></i></span>
+            <div><h4>Recordatorios por WhatsApp</h4><p>Para que nadie se olvide de la fecha.</p></div>
+          </div>
+          <div class="inv-feat animate-on-scroll delay-2">
+            <span class="inv-feat__ico"><i class="fas fa-music"></i></span>
+            <div><h4>Música de fondo</h4><p>La canción que elijas suena al abrir la invitación.</p></div>
+          </div>
+          <div class="inv-feat animate-on-scroll delay-3">
+            <span class="inv-feat__ico"><i class="fas fa-mobile-alt"></i></span>
+            <div><h4>Se ve perfecta en cualquier celu</h4><p>iPhone o Android, chico o grande.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ────────────────────────────────── -->
+    <section class="inv-cta-wrap">
+      <div class="container">
+        <div class="inv-cta animate-on-scroll">
+          <i class="fab fa-whatsapp inv-cta__icon" aria-hidden="true"></i>
+          <div class="inv-cta__text">
+            <h2>¿Listo para sorprender a tus invitados?</h2>
+            <p>Contanos el evento y en menos de 24 hs te mandamos un boceto.</p>
+          </div>
+          <a href="https://wa.me/542374031298?text=Hola!%20Me%20interesa%20una%20invitaci%C3%B3n%20digital" target="_blank" rel="noopener" class="inv-cta__btn">Escribinos <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 SKILARIO DEVELOPMENT STUDIO</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skilariodevs/" target="_blank" rel="noopener" aria-label="Instagram de Skilario"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Skilario/SkilarioDevStudio" target="_blank" rel="noopener" aria-label="GitHub de Skilario"><i class="fab fa-github"></i></a>
+            </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="whatsapp" href="https://wa.me/542374031298" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon" aria-hidden="true"></i>
+  </a>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/script.js"></script>
+
+</body>
+</html>

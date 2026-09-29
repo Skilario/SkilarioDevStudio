@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilario Development Studio - Servicios</title>
+    <link rel="icon" type="image/png" href="../imagenes/LOGOSKILARIO .png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/servicios.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="../imagenes/LOGOSKILARIO .png" alt="Skilario Logo" class="logo-img">
+                <div class="logo-text-wrap">
+                    <span class="logo-skilario">SKILARIO</span>
+                    <span class="logo-dev">DEVELOPMENT STUDIO</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#inicio">Inicio</a></li>
+                <li><a href="#promo" class="nav-promo">Promo $50k</a></li>
+                <li><a href="../index.html#proyectos">Proyectos</a></li>
+                <li><a href="../html/servicios.html">Servicios</a></li>
+                <li><a href="../html/invitaciones.html">Invitaciones Digitales</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-toggle" id="darkToggle" aria-label="Alternar modo oscuro">
+                    <i class="fas fa-moon" id="darkIcon"></i>
+                    <span id="darkLabel">Modo noche</span>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- ░░░ SERVICIOS WEB VIEW ░░░ -->
+    <div class="view" id="view-servicios">
+
+        <!-- Botón Volver -->
+        <a href="../index.html" class="back-btn-minimal-link">
+          <button class="back-btn-minimal" aria-label="Volver al inicio">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Volver al inicio
+          </button>
+        </a>
+
+    <!-- ░░░ PROMO $50.000/MES ░░░ -->
+    <section id="promo" class="promo promo--servicios">
+        <div class="container promo-grid">
+            <div class="promo-text animate-on-scroll">
+                <span class="eyebrow">Promo especial</span>
+                <h1 class="promo-title">Tu página web <span class="text-blue">profesional</span> por</h1>
+                <div class="promo-price" aria-label="50.000 pesos por mes">
+                    <span class="cur">$</span><span class="amount">50.000</span><span class="per">/mes</span>
+                </div>
+                <p class="promo-includes">Incluye <strong>hosting</strong>, <strong>dominio</strong> y <strong>hasta 5 secciones</strong>.</p>
+
+                <div class="promo-fast">
+                    <i class="far fa-clock"></i>
+                    <div>
+                        <strong>Lista en 24 hs</strong>
+                        <span>Hoy escribís, mañana está online</span>
+                    </div>
+                </div>
+
+                <div class="promo-actions">
+<a href="https://wa.me/542374031298?text=Hola!%20Quiero%20consultar%20por%20la%20promo%20de%20p%C3%A1gina%20web%20a%20%2450.000%20por%20mes" target="_blank" rel="noopener" class="btn-grad">
+                        <i class="fab fa-whatsapp"></i> Quiero mi página
+                    </a>
+                </div>
+
+                <p class="promo-paylink">
+                    <i class="fas fa-credit-card"></i>
+                    ¿Ya lo charlaste con nosotros? Transferí <strong>$50.000</strong> por mes al alias <button type="button" class="alias-copy" data-copy="skidevs" aria-label="Copiar alias skidevs"><span>skidevs</span><i class="far fa-copy"></i></button>
+                </p>
+
+                <div class="promo-clients">
+                    <small>Ya confiaron en nosotros</small>
+                    <div class="chips">
+                        <span>Gráfica Roca</span>
+                        <span>Bad Boys Barbershop</span>
+                        <span>Sigma Pet Shop</span>
+                        <span>JC Stands</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-card-wrap animate-on-scroll delay-2">
+                <div class="promo-card">
+                    <h3>Todo esto está incluido</h3>
+                    <ul class="promo-list">
+                        <li><span class="ico"><i class="fas fa-desktop"></i></span><div><strong>Diseño responsive</strong><span>Se ve bien en celu y compu</span></div></li>
+                        <li><span class="ico"><i class="fab fa-whatsapp"></i></span><div><strong>Botón a WhatsApp</strong><span>Te escriben con un toque</span></div></li>
+                        <li><span class="ico"><i class="fab fa-instagram"></i></span><div><strong>Conectada a redes</strong><span>Instagram y Facebook</span></div></li>
+                        <li><span class="ico"><i class="fas fa-search"></i></span><div><strong>Lista para Google</strong><span>Que te encuentren fácil</span></div></li>
+                        <li><span class="ico"><i class="fas fa-globe"></i></span><div><strong>Hosting y dominio</strong><span>No pagás nada aparte</span></div></li>
+                        <li><span class="ico"><i class="fas fa-layer-group"></i></span><div><strong>Hasta 5 secciones</strong><span>Inicio, servicios, galería, contacto y más</span></div></li>
+                    </ul>
+                    <div class="promo-pay">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Pagás <strong>mes a mes</strong> con Mercado Pago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ░░░ A MEDIDA ░░░ -->
+        <section class="custom container">
+            <div class="custom__head animate-on-scroll">
+                <h2>¿Necesitás algo más completo?</h2>
+                <p>Además de la promo armamos proyectos a medida. Cada uno se cotiza según lo que necesites.</p>
+            </div>
+
+            <div class="custom-grid">
+            <article class="custom-card custom-card--violet animate-on-scroll">
+                <span class="custom-card__ico"><i class="fas fa-laptop-code"></i></span>
+                <h3>Web a medida</h3>
+                <p>Para negocios que necesitan más que una página simple.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Más de 5 secciones</li>
+                    <li><i class="fas fa-check"></i> Turnos y reservas online</li>
+                    <li><i class="fas fa-check"></i> Panel para editar tu contenido</li>
+                    <li><i class="fas fa-check"></i> Google Analytics y Meta Pixel</li>
+                </ul>
+                <a href="https://wa.me/542374031298?text=Hola!%20Quiero%20cotizar%20una%20web%20a%20medida" target="_blank" rel="noopener" class="custom-card__link">Cotizar por WhatsApp <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="custom-card custom-card--blue animate-on-scroll">
+                <span class="custom-card__ico"><i class="fas fa-shopping-bag"></i></span>
+                <h3>Tienda online</h3>
+                <p>Para vender las 24 hs sin depender de un marketplace.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Catálogo con carrito de compras</li>
+                    <li><i class="fas fa-check"></i> Cobros con Mercado Pago</li>
+                    <li><i class="fas fa-check"></i> Gestión de stock</li>
+                    <li><i class="fas fa-check"></i> Envíos o retiro en el local</li>
+                </ul>
+                <a href="https://wa.me/542374031298?text=Hola!%20Quiero%20cotizar%20una%20tienda%20online" target="_blank" rel="noopener" class="custom-card__link">Cotizar por WhatsApp <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="custom-card custom-card--cyan animate-on-scroll">
+                <span class="custom-card__ico"><i class="fas fa-cogs"></i></span>
+                <h3>Sistema de gestión</h3>
+                <p>Software a medida para ordenar tu negocio.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Entrada y salida de empleados</li>
+                    <li><i class="fas fa-check"></i> Horas trabajadas y pagos</li>
+                    <li><i class="fas fa-check"></i> Reportes claros</li>
+                    <li><i class="fas fa-check"></i> Hecho a la medida de tu negocio</li>
+                </ul>
+                <a href="https://wa.me/542374031298?text=Hola!%20Quiero%20cotizar%20un%20sistema%20de%20gesti%C3%B3n" target="_blank" rel="noopener" class="custom-card__link">Cotizar por WhatsApp <i class="fas fa-arrow-right"></i></a>
+            </article>
+            </div>
+
+            <div class="custom-cta animate-on-scroll">
+                <div>
+                    <h3>¿Querés algo más preciso o específico?</h3>
+                    <p>Contanos qué necesitás y te pasamos un presupuesto sin compromiso.</p>
+                </div>
+                <a href="https://wa.me/542374031298?text=Hola%20Skilario!%20Quiero%20un%20presupuesto%20para%20un%20proyecto" target="_blank" rel="noopener" class="btn-grad"><i class="fab fa-whatsapp"></i> Escribinos por WhatsApp</a>
+            </div>
+        </section>
+
+    </div><!-- /view-servicios -->
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 SKILARIO DEVELOPMENT STUDIO</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skilariodevs/" target="_blank" rel="noopener" aria-label="Instagram de Skilario"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Skilario/SkilarioDevStudio" target="_blank" rel="noopener" aria-label="GitHub de Skilario"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a class="whatsapp" href="https://wa.me/542374031298" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
