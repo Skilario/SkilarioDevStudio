@@ -2070,3 +2070,51 @@ section[id], #promo { scroll-margin-top: calc(var(--nav-h, 77px) + 12px); }
   .work:hover .work-img img { transform: none; }
 }
 @media (max-width: 768px) { .hero-trust { justify-content: flex-start; } }
+
+/* ══════════════════════════════════════════════════════════
+   Mobile: tipografía más compacta (títulos y espaciados)
+   ══════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  section { padding: 56px 0; }
+  .sec-head { margin-bottom: 28px; }
+
+  h1, .hero h1 { font-size: 2.1rem; line-height: 1.1; }
+  h2,
+  .sec-head h2,
+  .about-text h2,
+  .contact2-text h2,
+  .custom__head h2 { font-size: 1.6rem; line-height: 1.2; }
+  .promo-title { font-size: 1.75rem; line-height: 1.15; }
+
+  .promo-price .amount,
+  .promo--home .promo-price .amount { font-size: 3.4rem; }
+  .promo-price .cur { font-size: 1.6rem; }
+  .price-current { font-size: 2.2rem; }
+
+  .service-card h3 { font-size: 1.2rem; }
+  .custom-card h3, .custom-cta h3 { font-size: 1.1rem; }
+  .svc-item h3, .work-info h3 { font-size: 1.02rem; }
+
+  .hero-sub { font-size: 1rem; line-height: 1.6; }
+  .section-subtitle { font-size: 1rem; margin-bottom: 36px; }
+  .sec-head p, .about-lead, .contact2-text p,
+  .custom__head p, .description-text p { font-size: 0.98rem; }
+}
+
+@media (max-width: 400px) {
+  h1, .hero h1 { font-size: 1.85rem; }
+  h2,
+  .sec-head h2,
+  .about-text h2,
+  .contact2-text h2,
+  .custom__head h2 { font-size: 1.45rem; }
+  .promo-title { font-size: 1.55rem; }
+  .promo-price .amount,
+  .promo--home .promo-price .amount { font-size: 3rem; }
+}
+
+/* Mobile: texto del logo más chico (la imagen queda igual) */
+@media (max-width: 768px) {
+  .logo-skilario { font-size: 1.3rem; line-height: 1.1; }
+  .logo-dev { font-size: 0.58rem; letter-spacing: 1.5px; }
+}

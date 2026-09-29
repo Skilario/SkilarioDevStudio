@@ -520,3 +520,9 @@ body.dark-mode .pricing-card__amount { color: var(--color-text); }
   .inv-features-grid { grid-template-columns: 1fr; }
   .discount-alert { flex-direction: column; text-align: center; }
 }
+
+/* Mobile: precios más compactos */
+@media (max-width: 768px) {
+  .pricing-card__amount { font-size: 2rem; }
+  .inv-price-amount { font-size: 2.6rem; }
+}

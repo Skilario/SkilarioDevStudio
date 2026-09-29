@@ -271,3 +271,17 @@ body.dark-mode .inv-cta { box-shadow: 0 24px 60px rgba(0,0,0,0.45); }
   }
 }
 .inv-swipe-hint { display: none; }
+
+/* Mobile: títulos más compactos */
+@media (max-width: 768px) {
+  .inv-hero__head { margin-bottom: 36px; }
+  .inv-hero__head h1 { font-size: 2.1rem; line-height: 1.1; }
+  .inv-price-card h2 { font-size: 1.4rem; }
+  .inv-price__now { font-size: 2.8rem; }
+  .inv-cta__icon { font-size: 2.2rem; }
+  .inv-cta__text h2 { font-size: 1.3rem; }
+}
+@media (max-width: 400px) {
+  .inv-hero__head h1 { font-size: 1.85rem; }
+  .inv-price__now { font-size: 2.5rem; }
+}
